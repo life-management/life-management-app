@@ -21,12 +21,4 @@ jobs:
       run: npm install ./frontend
 
     - name: Linting
-      run: cd ./frontend && npx eslint
-  # lint:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   
-  # test:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - run: npm run test
+      run: cd ./frontend && npm run lint
