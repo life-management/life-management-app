@@ -1,0 +1,10 @@
+name: Backend Workflow
+on:
+  push:
+    paths:
+      - backend/**
+
+jobs:
+  build:
+  lint:
+  test:

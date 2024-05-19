@@ -1,0 +1,10 @@
+name: Frontend Workflow
+on:
+  push:
+    paths:
+      - frontend/**
+
+jobs:
+  build:
+  lint:
+  test:
