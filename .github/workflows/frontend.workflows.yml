@@ -20,10 +20,12 @@ jobs:
     - name: Install Dependencies
       run: npm install ./frontend
 
+    - name: Linting
+      run: npx eslint
   # lint:
   #   runs-on: ubuntu-latest
   #   steps:
-  #   - run: npm run lint
+  #   
   # test:
   #   runs-on: ubuntu-latest
   #   steps:
