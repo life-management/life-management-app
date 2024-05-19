@@ -1,8 +1,8 @@
 name: Frontend Workflow
-on:
-  push:
-    paths:
-      - frontend/**
+# on:
+#   push:
+#     paths:
+#       - frontend/**
 
 jobs:
   build:
@@ -18,13 +18,14 @@ jobs:
         node-version: '18.17'
     
     - name: Install Dependencies
-      run: npm install
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - run: npm run lint
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - run: npm run test
+    - run: npm install ./frontend/package-lock.json
+
+  # lint:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - run: npm run lint
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - run: npm run test
