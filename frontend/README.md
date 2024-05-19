@@ -27,7 +27,7 @@ You can start developing by editing the files inside the **app** directory. This
 
 ## Get a fresh project
 
-When you're ready, run:a asddfadsf asdff
+When you're ready, run:a asddfadsf asdf
 
 ```bash
 npm run reset-project
