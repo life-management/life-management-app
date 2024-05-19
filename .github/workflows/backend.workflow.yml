@@ -8,4 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+    - run: echo "build job is being run"
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "lint job is being run"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Test job is being run"
