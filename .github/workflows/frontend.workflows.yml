@@ -18,8 +18,7 @@ jobs:
         node-version: '18.17'
     
     - name: Install Dependencies
-
-    - run: npm install ./frontend/package-lock.json
+      run: npm install ./frontend/package-lock.json
 
   # lint:
   #   runs-on: ubuntu-latest
