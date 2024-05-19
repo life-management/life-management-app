@@ -21,7 +21,7 @@ jobs:
       run: npm install ./frontend
 
     - name: Linting
-      run: npx eslint
+      run: cd ./frontend && npx eslint
   # lint:
   #   runs-on: ubuntu-latest
   #   steps:
