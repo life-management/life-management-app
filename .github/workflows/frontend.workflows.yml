@@ -7,13 +7,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - run:  echo "build job is being run"
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18.17'
+    
+    - name: Install Dependencies:
+      run: npm install
+
   lint:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "lint job is being run"
+    - run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Test job is being run"
+    - run: npm run test
