@@ -1,0 +1,27 @@
+name: Frontend Workflow
+on:
+  push:
+    paths:
+      - frontend/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18.17'
+    
+    - name: Install Dependencies
+      run: npm install ./frontend
+
+    - name: Linting
+      run: cd ./frontend && npm run lint
+
+    - name: Testing
+      run: cd ./frontend && npm test
