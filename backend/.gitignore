@@ -1,0 +1,10 @@
+#Python virtualenv
+life-management/
+
+# Django #
+*.log
+*.pot
+*.pyc
+./backend/__pycache__
+db.sqlite3
+media
