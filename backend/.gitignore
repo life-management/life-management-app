@@ -1,5 +1,5 @@
 #Python virtualenv
-life-management/
+venv/
 
 # Django #
 *.log
