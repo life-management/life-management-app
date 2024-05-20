@@ -15,3 +15,8 @@ class BasicTestCase(TestCase):
         request = self.factory.get("")
         response = index(request)
         self.assertEqual(response.status_code, 200)
+
+    def test_basic2(self):
+        request = self.factory.get("")
+        response = index(request)
+        self.assertEqual(response.status_code, 200)
