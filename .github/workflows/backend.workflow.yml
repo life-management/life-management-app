@@ -24,4 +24,4 @@ jobs:
     
     - name: linting
       run: |
-        black .
+        black . --check --verbose --diff --color
