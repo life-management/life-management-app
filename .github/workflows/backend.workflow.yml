@@ -22,6 +22,10 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install -r ./backend/requirements.txt
     
-    - name: linting
+    - name: Linting
       run: |
         black . --check --verbose --diff --color
+
+    - name: Testing
+      run: |
+        cd ./backend && python ./manage.py test
