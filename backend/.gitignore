@@ -1,0 +1,12 @@
+#Python virtualenv
+venv/
+
+# Django #
+*.log
+*.pot
+*.pyc
+./backend/__pycache__
+db.sqlite3
+media
+
+__pycache__
